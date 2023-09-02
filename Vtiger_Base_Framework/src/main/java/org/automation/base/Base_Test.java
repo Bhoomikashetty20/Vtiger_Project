@@ -77,7 +77,7 @@ public abstract class Base_Test extends InitObjects implements FrameworkConstant
 			}
 		} 
 		if (browserName.equalsIgnoreCase("chrome")) {
-			WebDriverManager.chromedriver().setup();
+			System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 			driver = new ChromeDriver();
 			Reporter.log("Successfully Launched Chrome Browser", true);
 		} else if (browserName.equalsIgnoreCase("firefox")) {

@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testDataSample.SampleDataProvider">
+      <class name="Vtiger.TC_Vtiger_036">
         <methods>
-          <include name="registerUser"/>
+          <include name="browserSetUp"/>
+          <include name="logoutOfApplication"/>
+          <include name="browserTearDown"/>
+          <include name="toEnterDataToPostalTextField"/>
+          <include name="loginToApplication"/>
         </methods>
-      </class> <!-- testDataSample.SampleDataProvider -->
+      </class> <!-- Vtiger.TC_Vtiger_036 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

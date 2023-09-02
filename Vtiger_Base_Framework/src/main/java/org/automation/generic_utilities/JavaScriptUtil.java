@@ -87,6 +87,6 @@ public class JavaScriptUtil {
 	 * @param element text box element
 	 */
 	public void jsClear(WebElement element) {
-		javaScript.executeScript("arguments[0].vlue='';",element);
+		javaScript.executeScript("arguments[0].value='';",element);
 	}
 }

@@ -57,7 +57,12 @@ public  class Base_Page {
 	@FindBy(id = "qccombo")
 	private WebElement quickCreateDropDown;
 	
-	
+	@FindBy(linkText = "Email")
+	private WebElement email;
+
+	public WebElement getEmail() {
+		return email;
+	}
 
 	public WebDriver getDriver() {
 		return driver;
